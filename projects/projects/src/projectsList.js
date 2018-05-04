@@ -25,10 +25,13 @@ class ProjectsList extends Component {
     return (
       <div>
         {projects.map((project, index) => {
+          console.log("project", project);
           return (
             <div key={index} className="Project">
               <div key={project.name}> name: {project.name}</div>
-              <div key={project.completed}>completed: {project.completed}</div>
+              <div key={project.completed}>
+                completed: {project.completed.toString()}
+              </div>
               <div key={project.description}>
                 description: {project.description}
               </div>

@@ -4,6 +4,7 @@ import axios from "axios";
 class Actions extends Component {
   constructor(props) {
     super(props);
+    console.log("props", this.props.match.params.id);
     this.state = {
       actions: []
     };
@@ -24,9 +25,21 @@ class Actions extends Component {
     this.fetchingActions();
   };
   render() {
+    const { actions } = this.state;
+    console.log("a", actions);
     return (
       <div>
-        <h1> actions </h1>
+        {actions.map(action => {
+          if (action.project_id == this.props.match.params.id) {
+            return (
+              <div>
+                <div>{action.project_id}</div>
+                <div>{action.description}</div>
+                <div>{action.notes}</div>
+              </div>
+            );
+          }
+        })}
       </div>
     );
   }

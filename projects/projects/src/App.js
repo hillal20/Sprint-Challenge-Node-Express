@@ -9,7 +9,7 @@ class App extends Component {
       <Router>
         <div className="App">
           <Route path="/" exact component={ProjectsList} />
-          <Route path="/actions" exact component={Actions} />
+          <Route path="/actions/:id" exact component={Actions} />
         </div>
       </Router>
     );
