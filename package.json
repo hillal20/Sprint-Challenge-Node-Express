@@ -17,12 +17,12 @@
   "bugs": {
     "url": "https://github.com/hillal20/Sprint-Challenge-Node-Express/issues"
   },
-  "homepage":
-    "https://github.com/hillal20/Sprint-Challenge-Node-Express#readme",
+  "homepage": "https://github.com/hillal20/Sprint-Challenge-Node-Express#readme",
   "devDependencies": {
     "nodemon": "^1.17.3"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "cors": "^2.8.4",
     "express": "^4.16.3",
     "helmet": "^3.12.0",
